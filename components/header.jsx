@@ -33,26 +33,26 @@ const Header = () => {
             alt="logo"
             width={40}
             height={40}
-            className="object-contain"
+            className="object-contain  hover:scale-120 transition-all duration-300"
           />
         </Link>
         {path === "/" && (
           <div className="hidden md:flex space-x-6">
             <Link
               href="#features"
-              className="text-white font-medium transition-all duration-300 hover:text-purple-400 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-gray-400 cursor-pointer"
             >
               Features
             </Link>
             <Link
               href="#pricing"
-              className="text-white font-medium transition-all duration-300 hover:text-yellow-300 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-gray-400 cursor-pointer"
             >
               Pricing
             </Link>
             <Link
               href="#contact"
-              className="text-white font-medium transition-all duration-300 hover:text-red-500 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-gray-400 cursor-pointer"
             >
               Contact
             </Link>
@@ -62,12 +62,12 @@ const Header = () => {
         <div className="flex items-center gap-3 ml-10 md:ml-20">
           <Unauthenticated>
             <SignInButton>
-              <Button variant="glass" className="hidden sm:flex">
+              <Button variant="ghost" className="hidden sm:flex ">
                 Sign In
               </Button>
             </SignInButton>
             <SignUpButton>
-              <Button variant="primary">Sign Up</Button>
+              <Button variant="outline">Sign Up</Button>
             </SignUpButton>
           </Unauthenticated>
           <Authenticated>
