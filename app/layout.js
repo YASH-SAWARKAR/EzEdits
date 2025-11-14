@@ -11,7 +11,7 @@ import { shadesOfPurple } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "pixel",
+  title: "EzEdits",
   description: "AI image upscaler",
 };
 
