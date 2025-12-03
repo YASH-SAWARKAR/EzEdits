@@ -12,7 +12,10 @@ import {
 } from "lucide-react";
 import { AdjustControls } from "./_tools/adjust.jsx";
 import { ResizeControls } from "./_tools/resize.jsx";
+import { CropContent } from "./_tools/crop.jsx";
+import { BackgroundControls } from "./_tools/ai-background.jsx";
 import { useCanvas } from "@/context/context";
+
 const TOOL_CONFIGS = {
   resize: {
     title: "Resize",
@@ -85,14 +88,14 @@ export function EditorSidebar({ project }) {
 
 function renderToolContent(activeTool, project) {
   switch (activeTool) {
-    // case "crop":
-    //   return <CropContent />;
+    case "crop":
+      return <CropContent />;
     case "resize":
       return <ResizeControls project={project} />;
     case "adjust":
       return <AdjustControls />;
-    //  case "background":
-    //   return <BackgroundControls project={project} />;
+    case "background":
+      return <BackgroundControls project={project} />;
     // case "ai_extender":
     //   return <AIExtenderControls project={project} />;
     // case "text":

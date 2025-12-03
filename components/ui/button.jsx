@@ -22,10 +22,12 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
 
         primary:
-          "bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 cursor-pointer",
-        // "backdrop-blur-lg bg-gradient-to-r from-blue-500 to-green-600 text-white border-transparent hover:shadow-2xl hover:shadow-blue-500/25 hover:transform hover:scale-105", // custom
+          // "relative px-8 py-4 text-lg font-medium text-white rounded-xl overflow-hidden backdrop-blur-md bg-white/5 border border-white/10 shadow-[0_0_15px_rgba(6,182,212,0.25)] transition-all duration-300 hover:shadow-[0_0_25px_rgba(6,182,212,0.45)] hover:border-cyan-400/30 hover:bg-white/10",
+          // " px-8 py-4 text-lg font-medium text-white rounded-xl bg-white/5 border border-white/10 backdrop-blur-md  transition-all duration-300 hover:bg-white/10 hover:border-cyan-300/30 hover:shadow-[0_0_20px_rgba(6,182,212,0.60)]",
+          // "backdrop-blur-lg bg-gradient-to-r from-blue-500 to-green-600 text-white border-transparent hover:shadow-2xl hover:shadow-blue-500/25 hover:transform hover:scale-105", // custom
+          "px-6 py-3 rounded-lg  bg-purple-600 text-white font-semibold shadow-[0_0_12px_rgba(139,92,246,0.35)] hover:bg-purple-500  hover:shadow-[0_0_20px_rgba(139,92,246,0.55)] transition-all duration-200 cursor-pointer", // custom
         glass:
-          "backdrop-blur-lg bg-white/10 text-white border-white/20 hover:bg-white/20 hover:transform hover:scale-105", // custom
+          "cursor-pointer relative px-8 py-4 text-white font-medium rounded-xl backdrop-blur-2xl bg-white/5 border border-white/10 shadow-[0_0_25px_rgba(255,255,255,0.06)] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_40px_rgba(255,255,255,0.12)] transition-all duration-300 hover:scale-105before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/10 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300", // custom
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

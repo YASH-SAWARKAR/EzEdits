@@ -50,10 +50,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Link href="/dashboard">
-              <Button
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 cursor-pointer"
-                size="xl"
-              >
+              <Button variant="primary" size="xl">
                 Start Creating
               </Button>
             </Link>
@@ -132,11 +129,7 @@ export default function Home() {
             their images and bring their vision to life.
           </p>
           <Link href="/dashboard">
-            <Button
-              // variant="primary"
-              size="xl"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 cursor-pointer"
-            >
+            <Button variant="primary" size="xl">
               🌟 Start Creating Now
             </Button>
           </Link>
