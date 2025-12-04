@@ -200,7 +200,7 @@ export function AdjustControls() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-120">
       {/* Reset Button */}
       <div className="flex justify-between items-center">
         <h3 className="text-sm font-medium text-white">Image Adjustments</h3>

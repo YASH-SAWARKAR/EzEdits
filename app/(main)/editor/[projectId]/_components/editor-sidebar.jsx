@@ -16,6 +16,7 @@ import { CropContent } from "./_tools/crop.jsx";
 import { BackgroundControls } from "./_tools/ai-background.jsx";
 import { TextControls } from "./_tools/text.jsx";
 import { AIExtenderControls } from "./_tools/ai-extend.jsx";
+import { AIEdit } from "./_tools/ai-edit.jsx";
 import { useCanvas } from "@/context/context";
 
 const TOOL_CONFIGS = {
@@ -102,8 +103,8 @@ function renderToolContent(activeTool, project) {
       return <AIExtenderControls project={project} />;
     case "text":
       return <TextControls />;
-    // case "ai_edit":
-    //   return <AIEdit project={project} />;
+    case "ai_edit":
+      return <AIEdit project={project} />;
     default:
       return <div className="text-white">Select a tool to get started</div>;
   }

@@ -211,7 +211,7 @@ export function BackgroundControls({ project }) {
   }
 
   return (
-    <div className="space-y-6 relative h-full">
+    <div className="space-y-6 relative h-full w-120">
       {/* AI Background Removal Button - Outside of tabs */}
       <div className="space-y-4 pb-4 border-b border-white/10">
         <div>
